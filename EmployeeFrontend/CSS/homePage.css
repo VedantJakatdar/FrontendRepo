@@ -1,6 +1,18 @@
 .container {
-  margin: 20px;
+  margin: 10px;
   text-align: center;
+}
+
+#logout-button {
+  float: right
+}
+
+#employee-table {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 table {
@@ -9,7 +21,7 @@ table {
 }
 
 th, td {
-  padding: 6px;
+  padding: 8px;
   text-align: center;
   border-bottom: 1px solid #ddd; 
 }
@@ -58,9 +70,4 @@ h1{
 
 #button {
   margin-right: auto; 
-}
-
-#search-input {
-  margin-left: auto; 
-  height: 25px;
 }

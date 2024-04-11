@@ -1,0 +1,99 @@
+header {
+    padding: 1px;
+    background-color: #f2f2f2;
+    color: black;
+    text-align: center;
+}
+
+#searchSection {
+    margin: 50px auto;
+    width: 80%;
+    text-align: center;
+}
+
+#searchSection h2 {
+    margin-bottom: 20px;
+}
+
+.searchContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.searchBox {
+    margin: 0 10px;
+}
+
+.searchBox label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.searchBox input[type="number"] {
+    width: 150px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.searchBox select {
+    width: 160px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#searchButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#searchButton:hover {
+    background-color: #0056b3;
+}
+
+#employeeDetails {
+    width: 60%;
+    margin: 0 auto;
+}
+
+#employeeDetails h2 {
+    margin-bottom: 10px;
+}
+
+#employeeList {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; 
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd; 
+}
+
+th {
+    background-color: #f2f2f2; 
+}
+
+.footer{
+    padding: 6px;
+    background-color: #f2f2f2;
+    color: black;
+    text-align: center;
+}
