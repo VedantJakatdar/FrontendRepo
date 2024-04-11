@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Management</title>
+  <link rel="stylesheet" href="..\CSS\homePage.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Employee Management System</h1>
+    <div class="container1"><button id="button" onclick="navigateToEmployeeForm()">Add Employee</button>
+      <input type="number" id="search-input" placeholder="Search by Employee ID....">
+      <div id="search-results"></div>
+    </div>
+    <table id="employee-table">
+      <thead>
+        <tr>
+          <th>Employee ID</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Department Name</th>
+          <th>Position Name</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="employee-table-body">
+        <!-- Employee data will be populated here -->
+      </tbody>
+    </table>
+    <div class="footer">
+        <footer><h4>All Rights Reserved by Coder</h4></footer>
+    </div>
+  </div>
+  <script src="..\JavaScript\homePage.js"></script>
+  <script src="..\JavaScript\searchEmployee.js"></script>
+  <script>
+    function navigateToEmployeeForm() {
+      window.location.href = 'addEmployee.html';
+    }
+  </script>
+</body>
+</html>
