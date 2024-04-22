@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Employee Management</title>
-  <link rel="stylesheet" href="..\CSS\addAndUpdateEmployee.css">
+  <link rel="stylesheet" href="../CSS/addAndUpdateEmployee.css">
 </head>
 <body>
   <header class="header">
@@ -17,10 +17,26 @@
       <input type="text" id="first-name" placeholder="First Name" required>
       <input type="text" id="last-name" placeholder="Last Name" required>
       <input type="email" id="email" placeholder="Email" required>
-      <!-- <input type="number" id="department-id" placeholder="Department ID" required> -->
-      <input type="text" id="department-name" placeholder="Department Name" required>
-      <!-- <input type="number" id="position-id" placeholder="Position ID" required> -->
-      <input type="text" id="position-name" placeholder="Position Name" required>
+      <input list="dep-list" type="text" placeholder="Department Name" id="department-name" required>
+        <datalist id="dep-list">
+          <option value="IT">
+          <option value="HR">
+          <option value="RMG">
+          <option value="CSR">
+          <option value="Accounts">
+        </datalist>
+      </input>
+      <input list="pos-list" type="text" placeholder="Position Name" id="position-name" required>
+        <datalist id="pos-list">
+          <option value="System Engineer">
+          <option value="Analyst">
+          <option value="Regional HR">
+          <option value="Architect">
+          <option value="Lead">
+          <option value="Head">
+          <option value="Senior HR">
+        </datalist>
+      </input>
       <button type="button" id="update-btn">Submit</button>
     </form>
     <div id="result"></div>
@@ -28,7 +44,7 @@
   <div class="footer">
     <footer><h4>All Rights Reserved by Coder</h4></footer>
   </div>
-  <script src="..\JavaScript\updateEmployee.js"></script>
-  <script src="..\JavaScript\updateEmployeeForm.js"></script>
+  <script src="../JavaScript/updateEmployee.js"></script>
+  <script src="../JavaScript/updateEmployeeForm.js"></script>
 </body>
 </html>

@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Employee Management</title>
-  <link rel="stylesheet" href="..\CSS\homePage.css">
+  <link rel="stylesheet" href="../CSS/homePage.css">
 </head>
 <body>
   <div class="container">
-    <h1>Employee Management System</h1>
-    <div class="container1"><button id="button" onclick="navigateToEmployeeForm()">Add Employee</button>
-      <input type="number" id="search-input" placeholder="Search by Employee ID....">
+    <div class="header"><h1>Employee Management System <button id="logout-button" onclick="navigateToLoginPage()">Logout</button></h1></div>
+    <div class="container1">
+      <button id="button" onclick="navigateToEmployeeForm()">Add Employee</button> 
+      <button id="search-input" onclick="navigateToSearchEmployeePage()">Search Employee</button> 
       <div id="search-results"></div>
     </div>
     <table id="employee-table">
@@ -33,11 +34,17 @@
         <footer><h4>All Rights Reserved by Coder</h4></footer>
     </div>
   </div>
-  <script src="..\JavaScript\homePage.js"></script>
-  <script src="..\JavaScript\searchEmployee.js"></script>
+  <script src="../JavaScript/homePage.js"></script>
   <script>
     function navigateToEmployeeForm() {
       window.location.href = 'addEmployee.html';
+    }
+    function navigateToSearchEmployeePage() {
+      window.location.href = 'searchEmployee.html';
+    }
+    function navigateToLoginPage() {
+      window.location.href = 'index.html';
+      alert("You have been logged out");
     }
   </script>
 </body>

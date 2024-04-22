@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Employee</title>
+    <link rel="stylesheet" href="../CSS/searchEmployee.css"> 
+</head>
+<body>
+    <header>
+        <h1>Employee Management System</h1>
+    </header>
+    <section id="searchSection">
+        <h2>Search Employee</h2>
+        <div class="searchContainer">
+            <div class="searchBox">
+                <label for="empId">Search by Employee ID:-</label>
+                <input type="number" id="empId" name="empId" placeholder="Employee ID">
+            </div>
+            <div class="searchBox">
+                <label for="department">Search by Department:-</label>
+                <select id="department" name="department">
+                    <option value="">Select Department</option>
+                </select>
+            </div>
+            <div class="searchBox">
+                <label for="position">Search by Position:-</label>
+                <select id="position" name="position">
+                    <option value="">Select Position</option>
+                </select>
+            </div>   
+        </div>
+        <button id="searchButton">Search</button>
+    </section>
+    <section id="employeeDetails">
+        <h2>Employee Details:</h2>
+        <table id="employeeList">
+            <thead>
+                <tr>
+                    <th>Employee ID</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Position</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Employee details will be dynamically added here -->
+            </tbody>
+        </table>
+    </section>
+    <br><br>
+    <div class="footer">
+        <footer><h4>All Rights Reserved by Coder<h4></footer>
+    </div>
+    <script src="..\JavaScript\searchEmployee.js"></script>
+</body>
+</html> 

@@ -1,14 +1,12 @@
  //Updating an Employee
- document.getElementById('update-btn').addEventListener('click', async () => {
+document.getElementById('update-btn').addEventListener('click', async () => {
   const employeeData = getFormData();
   if (
       employeeData.empId === "" ||
       employeeData.firstName === "" ||
       employeeData.lastName === "" ||
       employeeData.emailId === "" ||
-      // employeeData.department.id === "" ||
       employeeData.department.name === "" ||
-      // employeeData.position.id === "" ||
       employeeData.position.title === ""
   ) {
       alert("All fields must be filled out");
@@ -42,9 +40,7 @@
     const firstName = document.getElementById('first-name').value;
     const lastName = document.getElementById('last-name').value;
     const email = document.getElementById('email').value;
-    // const departmentId = document.getElementById('department-id').value;
     const departmentName = document.getElementById('department-name').value;
-    // const positionId = document.getElementById('position-id').value;
     const positionName = document.getElementById('position-name').value;
     return {
         empId: employeeId,
@@ -52,12 +48,11 @@
         lastName: lastName,
         emailId: email,
         department: {
-            // id: departmentId,
             name: departmentName
         },
         position: {
-            // id: positionId,
             title: positionName
         }
     };
   }
+  
