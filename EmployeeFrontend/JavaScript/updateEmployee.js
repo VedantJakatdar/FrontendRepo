@@ -28,7 +28,6 @@ document.getElementById('update-btn').addEventListener('click', async () => {
       });
       const data = await response.json();
       console.log('Employee updated:', data);
-      alert("Employee Updated Successfully");
       window.location.href = "homePage.html";
     } catch (error) {
       console.error('Error updating employee:', error);
@@ -55,4 +54,3 @@ document.getElementById('update-btn').addEventListener('click', async () => {
         }
     };
   }
-  

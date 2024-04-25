@@ -1,4 +1,4 @@
-//Auto-Populating data into table after adding, updating & deleting
+//Auto-Populating data into table of homePage after adding, updating & deleting
 document.addEventListener('DOMContentLoaded', async () => {
     try {
       const response = await fetch('http://localhost:8080/employees');
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   //Redirecting to the updateEmployee page
   function editEmployee(empId) {
     window.location.href = `updateEmployee.html?empId=${empId}`;
-}
+  }
 
 
   //deleting an employee
@@ -40,7 +40,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           method: 'DELETE',
         });
         if (response.ok) {
-          alert('Employee deleted successfully');
           location.reload();
         } else {
           const errorMessage = await response.text();
@@ -48,8 +47,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       } catch (error) {
         console.error('Error deleting employee:', error);
-        alert('Failed to delete employee. Please try again.');
       }
     }
   }
-
