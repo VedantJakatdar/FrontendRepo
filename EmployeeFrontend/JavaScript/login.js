@@ -23,7 +23,7 @@ connection.connect(function(error){
 })
 
 app.get("/", function(req,res){
-    const htmlPath = path.join(__dirname, '../HTML/index.html');
+    const htmlPath = path.join(__dirname, '../HTML/login.html');
     res.sendFile(htmlPath);
 })
 
@@ -34,7 +34,6 @@ app.post("/", encoder ,function(req, res){
         if (results.length > 0) {
             res.redirect("/HTML/homePage.html");
         } else {
-            // res.redirect("/");
             res.send('<script>alert("Wrong username or password"); window.location.href = "/";</script>');
         }
         res.end();
@@ -47,4 +46,3 @@ app.get("../HTML/homePage.html",function(req,res){
 })
 
 app.listen(5500);
-

@@ -2,7 +2,6 @@
 document.getElementById('add-btn').addEventListener('click', async () => {
   const employeeData = getFormData();
   if (
-      employeeData.empId === "" ||
       employeeData.firstName === "" ||
       employeeData.lastName === "" ||
       employeeData.emailId === "" ||
@@ -31,22 +30,18 @@ document.getElementById('add-btn').addEventListener('click', async () => {
       const data = await response.json();
       console.log('Employee added:', data);
       window.location.href = "homePage.html";
-      alert('Employee added successfully');
   } catch (error) {
       console.error('Error adding employee:', error);
-      alert('Error adding employee. Please try again.');
   }
 });
 
 function getFormData() {
-  const employeeId = document.getElementById('employee-id').value;
   const firstName = document.getElementById('first-name').value;
   const lastName = document.getElementById('last-name').value;
   const email = document.getElementById('email').value;
   const departmentName = document.getElementById('department-name').value;
   const positionName = document.getElementById('position-name').value;
   return {
-      empId: employeeId,
       firstName: firstName,
       lastName: lastName,
       emailId: email,
