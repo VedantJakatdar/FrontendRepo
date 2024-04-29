@@ -17,7 +17,8 @@ document.getElementById('update-btn').addEventListener('click', async () => {
       alert("Invalid email format");
       return false;
   }
-    const employeeId = document.getElementById('employee-id').value;
+    const params = new URLSearchParams(window.location.search);
+    const employeeId = params.get('empId');
     try {
       const response = await fetch(`http://localhost:8080/employees/${employeeId}`, {
         method: 'PUT',
